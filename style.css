@@ -80,7 +80,7 @@ header{
     flex: 1 1 17rem;
 }
 .home-img img {
-  animation: animate 3s linear infinite;
+    animation: animate 3s linear infinite;
 }
 @keyframes animate {
     0%{
@@ -306,16 +306,15 @@ header{
     transition: 0.2s;
     text-align: left;
    }
-   .navbar a{
+   .navbar.active{
+    top: 100%;
+   }
+   .navbar a {
     padding: 1.5rem;
     display: block;
     color: var(--second-color);
    }
-   .navbar.active{
-    top: 100%;
-   }
-   .home-text span
-   {
+   .home-text span{
     font-size: 0.9rem;
    }
    .home-text h1{
@@ -324,7 +323,8 @@ header{
    .home-text h2{
     font-size: 1.2rem;
    }
-   @media (max-width:768px ) {
+}
+   @media (max-width: 768px ) { 
     .home-text{
         padding-top: inherit;
     }
@@ -338,13 +338,12 @@ header{
    font-size: 0.9rem;
     }
     .about{
-        flex-direction:column-reverse ;
+        flex-direction: column-reverse;
     }
-   }
-   @media (max-width:351px){
-    .links{
+}
+@media (max-width: 364px) {
+    .links {
         display: flex;
         flex-direction: column;
     }
-   }
 }
