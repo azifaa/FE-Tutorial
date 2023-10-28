@@ -47,6 +47,7 @@ header{
 }
 .navbar{
     display: flex;
+    align-items: center;
 }
 .navbar a{
     font-size: 1rem;
@@ -74,7 +75,7 @@ header{
     gap: 1rem;
 }
 .home-text {
-    flex:1 1 17rem ;
+    flex:1 1 17rem;
 }
 .home-img {
     flex: 1 1 17rem;
@@ -97,7 +98,7 @@ header{
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--second-color-color);
+    color: var(--second-color);
 }
 .home-text h1{
     font-size: 3.2rem;
